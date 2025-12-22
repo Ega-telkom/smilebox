@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Smilebox - Beranda</title>
+    </head>
+    <body>
+        <div id="navbar"></div>
+        <main>Konten</main>
+        <div id="footer"></div>
+
+        <!--JQuery-->
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+        ></script>
+    </body>
+
+    <!--Memuat komponen footer dan navbar-->
+    <script>
+        $("#navbar").load("/components/navbar.html");
+        $("#footer").load("/components/footer.html");
+    </script>
+</html>
