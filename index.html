@@ -9,34 +9,58 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/assets/style.css">
+        <link rel="stylesheet" type="text/tailwindcss" href="/assets/tailwind.css">
+        <script src="/assets/script.js"></script>
     </head>
     <body>
         <!--Navbar-->
         <div class="text-2xl">
-            <nav class="fixed top-0 left-0 right-0 z-50 flex justify-center p-4">
-                <div class="flex items-center justify-between w-full  px-6 py-3 bg-white/30 backdrop-blur-md border border-white/20 rounded-xl shadow-lg">
+            <nav class="navbar fixed top-0 left-0 right-0 z-50 flex justify-center p-0">
+                <div class="navbar flex items-center justify-between w-full px-10 py-5
+            bg-transparent border border-transparent shadow-none
+            transition-all duration-300">
                     <div class="flex items-center gap-10"> <div class="flex items-center">
-                        <img src="/photo/smilebox-logo.png" alt="Smilebox Logo" class="w-8 h-8"/>
+                        <img src="assets/image/logo.png" alt="Smilebox Logo" class="w-6 h-6"/>
                     </div>
                     
                     <div class="flex items-center gap-6 text-sm font-medium text-gray-500">
-                        <a href="Tentang" class="hover:text-black transition">Tentang</a>
-                        <a href="Layanan" class="hover:text-black transition">Layanan</a>
-                        <a href="Kontak" class="hover:text-black transition">Kontak</a>
+                        <a href="Tentang" class="mulish-p hover:text-black transition">Tentang</a>
+                        <a href="Layanan" class="mulish-p hover:text-black transition">Layanan</a>
+                        <a href="Kontak" class="mulish-p hover:text-black transition">Kontak</a>
                     </div>
 
                 </div>
-
-                <div class="flex items-center">
-                    <a href="Login" class="text-sm font-semibold text-gray-800">Login</a>
+                    <div class="flex items-center">
+                        <a href="Login" class="mulish-p text-sm font-semibold text-gray-800">Login</a>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </div>
+            </nav>
+        </div>
         
         <!--Konten-->
-        <main class="bg-blue-500">
-            Konten
+        <main class="mt-32">
+            <section class="relative h-[600px] bg-white">
+                <!-- Semi Circle Background -->
+                <div class="absolute bottom-0 left-1/2 -translate-x-1/2">
+                    <div class="w-[1200px] h-[600px] rounded-t-full bg-gradient-to-br from-sky-400 to-sky-600"></div>
+                </div>
+
+                <!-- Portrait Image with Bottom Gradient -->
+                <div class="absolute bottom-0 left-1/2 -translate-x-1/2 z-10">
+                    <img 
+                        src="/assets/image/header.png" 
+                        alt="Hero" 
+                        class="gradient-mask-bottom h-[700px] w-auto object-cover object-top"
+                    >
+                </div>
+
+                <!-- Text Overlay with Mask -->
+                <div class="relative z-20 h-full flex items-center justify-center pt-20">
+                    <h1 class="fraunces-h1 text-white text-6xl font-bold text-mask px-6 text-center">
+                        Terdapat Berlian di Senyumanmu
+                    </h1>
+                </div>
+            </section>
         </main>
         
         <!--Footer-->
