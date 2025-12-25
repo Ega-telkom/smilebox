@@ -29,30 +29,13 @@
     "WONK" 0;
 }
 
-        .gradient-mask-bottom {
-            mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
-            -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
-        }
-        
-        .text-mask {
-            position: relative;
-        }
-        
-        .text-mask::before {
-            content: attr(data-text);
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            color: white;
-            clip-path: circle(600px at 50% 100%);
-        }
-        
-        .text-mask::after {
-            content: attr(data-text);
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            color: black;
-        }
+.semi-circle {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 200px;
+    border-radius: 150px 150px 0 0;
+    background-color: green;
+}
