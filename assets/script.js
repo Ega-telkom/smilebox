@@ -28,6 +28,47 @@ document.addEventListener("scroll", () => {
   });
 });
 
+
+function toggleMenu() {
+    // Elemen garis nya
+    const menu = document.getElementById('menu-items');
+    const navContainer = document.getElementById('nav-container');
+    const l1 = document.getElementById('line-1');
+    const l2 = document.getElementById('line-2');
+    const l3 = document.getElementById('line-3');
+
+    // Jalanin toggle button nya
+    menu.classList.toggle('hidden');
+    
+    // Jika navContainer transparan,beri warna saat menu buka
+    navContainer.classList.toggle('bg-white');
+    navContainer.classList.toggle('shadow-lg');
+
+    // Animasi Transformasi Burger ke X
+    l1.classList.toggle('rotate-90');
+    l1.classList.toggle('translate-x-[-8px]'); // Geser sedikit ke kiri
+    l1.classList.toggle('translate-y-[10px]'); // Sesuaikan posisi tinggi
+
+    l2.classList.toggle('rotate-90');
+    l2.classList.toggle('translate-y-[-3px]');
+    // Garis tengah tetap di porosnya, hanya berputar
+
+    l3.classList.toggle('rotate-90');
+    l3.classList.toggle('translate-x-[8px]');  // Geser sedikit ke kanan
+    l3.classList.toggle('translate-y-[-17px]'); // Sesuaikan posisi tinggi
+}
+
+// Tambahan: Menutup menu otomatis saat link diklik (untuk Single Page Application)
+document.querySelectorAll('#menu-items a').forEach(link => {
+    link.addEventListener('click', () => {
+        const menu = document.getElementById('menu-items');
+        if (!menu.classList.contains('hidden')) {
+            toggleMenu();
+        }
+    });
+});
+
+
 // Galeri Header 
 const images = document.querySelectorAll('.slide-img');
 let currentIndex = 0;
