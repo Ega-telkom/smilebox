@@ -59,71 +59,86 @@
             <div
                 class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-full rounded-t-full bg-sky-400 overflow-hidden z-10">
                 <div class="flex flex-col items-center w-full">
-                    <h1 class="fraunces-h1 text-5xl md:text-6xl lg:text-7xl font-bold text-white text-center px-10 pt-[2%] lg:pt-[5%]"
+                    <h1 class="fraunces hidden xl:block text-5xl md:text-6xl lg:text-7xl font-bold text-white text-center px-10 pt-[2%] lg:pt-[5%] [text-shadow:4px_4px_0px_rgba(0,0,0,1)]"
                         aria-hidden="true">
                         Terdapat Berlian di Senyumanmu
                     </h1>
                 </div>
             </div>
 
-            <div
-                class="absolute bottom-[5%] xl:bottom-[45%] left-1/2 -translate-x-1/2 w-[60%] xl:w-[30%] z-20 pointer-events-none">
-                <img src="./assets/image/header.png" alt="Portrait"
-                    class="w-full h-full object-contain object-bottom" />
-                <div class="absolute bottom-0 left-0 w-full h-[20%] bg-gradient-to-t from-sky-400 to-transparent"></div>
+            <div class="absolute bottom-[5%] xl:bottom-[24%] left-1/2 -translate-x-1/2 w-[55%] xl:w-[45%] h-full z-20 pointer-events-none">
+                
+                <img src="./assets/image/header/header-1.png" alt="Portrait 1"
+                    class="slide-img absolute bottom-0 left-0 w-full h-[130%] object-contain object-bottom transition-opacity duration-500 opacity-100" />
+                    
+                <img src="./assets/image/header/header-2.png" alt="Portrait 2"
+                    class="slide-img absolute bottom-0 left-0 w-full h-[130%] object-contain object-bottom transition-opacity duration-500 opacity-0" />
+                
+                <img src="./assets/image/header/header-3.png" alt="Portrait 2"
+                    class="slide-img absolute bottom-0 left-0 w-full h-[130%] object-contain object-bottom transition-opacity duration-500 opacity-0" />
+                
+                <div class="absolute bottom-0 left-0 w-full h-[20%] bg-gradient-to-t from-sky-400 to-transparent z-30"></div>
             </div>
 
             <div class="absolute inset-0 flex flex-col items-center pointer-events-none z-30">
                 <h1
-                    class="fraunces-h1 text-5xl md:text-6xl lg:text-7xl font-bold text-transparent text-center px-10 pt-[2%] lg:pt-[5%]">
-                    <div class="block sm:hidden text-rose-400">
-                        Terda<span class="text-white">pat Ber</span>lian di Se<span class="text-white">nyuman</span>mu
-                    </div>
-
-                    <div class="hidden sm:block md:hidden text-amber-400">
-                        Terd<span class="text-white">apat Berli</span>an di Se<span class="text-white">nyuma</span>nmu
-                    </div>
-
-                    <div class="hidden md:block lg:hidden text-emerald-400">
-                        Terda<span class="text-white">pat Ber</span>lian di <span class="text-white">Senyuma</span>nmu
-                    </div>
-
-                    <div class="hidden lg:block xl:hidden text-red-500">
-                        Terd<span class="text-white">apat Berlian</span> di Senyumanmu
-                    </div>
-
-                    <div class="hidden xl:block">
-                        Terdapat <span class="text-white">Berlian di</span> Senyumanmu
-                    </div>
+                    class="fraunces hidden xl:block text-5xl md:text-6xl lg:text-7xl font-bold text-transparent text-center px-10 pt-[2%] lg:pt-[5%]">
+                    Terda<span class="text-white [text-shadow:4px_4px_0px_rgba(0,0,0,1)]">pat Berlian di Senyu</span>manmu
                 </h1>
             </div>
 
             <h1
-                class="fraunces-h1 text-5xl md:text-6xl lg:text-7xl font-bold text-black text-center px-10 pt-[2%] lg:pt-[5%] z-0">
+                class="fraunces hidden xl:block text-5xl md:text-6xl lg:text-7xl font-bold text-black text-center px-10 pt-[2%] lg:pt-[5%] z-0 [text-shadow:4px_4px_0px_rgba(0,188,255,1)]">
                 Terdapat Berlian di Senyumanmu
             </h1>
         </section>
+        
+        <section class="w-full bg-sky-400 pb-10 xl:pb-0">
+            <h1
+                class="fraunces block xl:hidden text-5xl md:text-6xl lg:text-7xl font-bold text-white text-center px-10 pt-[2%] lg:pt-[5%] z-0">
+                Terdapat Berlian di 
+                <span class="inline-block whitespace-nowrap">
+                    Senyumanmu<img 
+                      src="./assets/image/doodles/diamond-white.svg" 
+                      class="inline-block w-8 h-8 mb-[0.5em] ml-0.5" 
+                      alt="icon"
+                    />
+                  </span>
+            </h1>
+        </section>
+        
+        <section class="hidden xl:flex w-full bg-sky-400 justify-center items-center py-4">
+            <img src="./assets/image/doodles/diamond-white.svg" alt="diamond">
+        </section>
+        
+        <section class="w-full bg-sky-400 flex justify-center">
+            <img src="./assets/image/doodles/line.svg" alt="">
+        </section>
 
-        <div class="w-full bg-sky-400 py-20 px-4 flex items-center justify-center">
-            <h1 class="fraunces-h1 font-bold text-white text-3xl md:text-5xl lg:text-6xltext-center">
+        <div class="w-full bg-sky-400 py-10 xl:py-20 px-10 flex items-center justify-center">
+            <h1 class="fraunces font-bold text-white text-3xl xl:text-6xl text-center">
                 Senyumanmu perlu <i>visi</i>, bukan perbaikan
             </h1>
         </div>
     </main>
 
     <!-- Layanan -->
-    <section id="layanan" class="py-32 bg-white">
+    <section id="layanan" class="py-24 xl:py-32 bg-white">
         <div class="max-w-6xl mx-auto px-6">
 
             <!-- Heading -->
-            <div class="text-center mb-20 reveal">
-                <img src="assets/image/doodles/1.svg" class="w-32 h-32 mx-auto mb-6" alt="doodle1">
-
-                <h2 class="fraunces-h2 text-4xl font-semibold mb-4">
+            <div class="text-left md:text-center mb-20 reveal">
+                <img src="./assets/image/doodles/1.svg" 
+                     class="block md:mx-auto w-24 h-24 xl:w-32 xl:h-32 mb-6" 
+                     alt="doodle1">
+            
+                <h2 class="fraunces text-3xl md:text-4xl font-semibold mb-4">
                     Kami bisa melakukan banyak hal!
                 </h2>
-
-                <img src="assets/image/doodles/2.svg" class="w-24 h-2 mx-auto mb-3" alt="doodle2">
+            
+                <img src="./assets/image/doodles/2.svg" 
+                     class="block md:mx-auto w-24 h-2 mb-3" 
+                     alt="doodle2">
             </div>
 
             <!-- Grid Layanan -->
@@ -131,49 +146,49 @@
 
                 <!-- Item -->
                 <div class="reveal delay-1">
-                    <img src="assets/image/doodles/3.svg" class="w-32 h-32 mb-6" alt="doodle3">
-                    <h3 class="text-xl font-semibold mb-2">Umum</h3>
-                    <p class="mulish-p text-gray-500 text-sm leading-relaxed">
+                    <img src="./assets/image/doodles/3.svg" class="w-32 h-32 mb-6" alt="doodle3">
+                    <h3 class="mulish text-xl font-bold mb-2">Umum</h3>
+                    <p class="mulish text-gray-500 text-sm leading-relaxed">
                         Konsultasi, scaling, rontgen gigi, hingga perawatan gigi anak kami lakukan dengan cara yang nyaman dan ramah untuk semua usia.
                     </p>
                 </div>
 
                 <div class="reveal delay-2">
-                    <img src="assets/image/doodles/4.svg" class="w-38 h-32 mb-6" alt="doodle4">
-                    <h3 class="text-xl font-semibold mb-2">Perawatan Gigi</h3>
-                    <p class="mulish-p text-gray-500 text-sm leading-relaxed">
+                    <img src="./assets/image/doodles/4.svg" class="w-38 h-32 mb-6" alt="doodle4">
+                    <h3 class="mulish text-xl font-bold mb-2">Perawatan Gigi</h3>
+                    <p class="mulish text-gray-500 text-sm leading-relaxed">
                         Tambal gigi, perawatan saluran akar, crown, dan veneer untuk menjaga fungsi gigi sekaligus membuat senyum tetap sehat.
                     </p>
                 </div>
 
                 <div class="reveal delay-3">
-                    <img src="assets/image/doodles/5.svg" class="w-38 h-32 mb-6" alt="doodle5">
-                    <h3 class="text-xl font-semibold mb-2">Ortodontik</h3>
-                    <p class="mulish-p text-gray-500 text-sm leading-relaxed">
+                    <img src="./assets/image/doodles/5.svg" class="w-38 h-32 mb-6" alt="doodle5">
+                    <h3 class="mulish text-xl font-bold mb-2">Ortodontik</h3>
+                    <p class="mulish text-gray-500 text-sm leading-relaxed">
                         Perawatan kawat gigi (behel) yang disesuaikan dengan kebutuhanmu untuk hasil yang rapi dan optimal.
                     </p>
                 </div>
 
                 <div class="reveal delay-4">
-                    <img src="assets/image/doodles/6.svg" class="h-32 mb-6" alt="doodle6">
-                    <h3 class="text-xl font-semibold mb-2">Estetika & Kosmetik</h3>
-                    <p class="mulish-p text-gray-500 text-sm leading-relaxed">
+                    <img src="./assets/image/doodles/6.svg" class="h-32 mb-6" alt="doodle6">
+                    <h3 class="mulish text-xl font-bold mb-2">Estetika & Kosmetik</h3>
+                    <p class="mulish text-gray-500 text-sm leading-relaxed">
                         Bleaching, gigi palsu, dan implan gigi untuk membantu senyummu terlihat lebih cerah, alami, dan percaya diri.
                     </p>
                 </div>
 
                 <div class="reveal delay-5">
-                    <img src="assets/image/doodles/7.svg" class="h-32 mb-6" alt="doodle7">
-                    <h3 class="text-xl font-semibold mb-2">Bedah Mulut</h3>
-                    <p class="mulish-p text-gray-500 text-sm leading-relaxed">
+                    <img src="./assets/image/doodles/7.svg" class="h-32 mb-6" alt="doodle7">
+                    <h3 class="mulish text-xl font-bold mb-2">Bedah Mulut</h3>
+                    <p class="mulish text-gray-500 text-sm leading-relaxed">
                         Pencabutan gigi dan bedah mulut minor dilakukan dengan prosedur aman dan tenaga medis berpengalaman.
                     </p>
                 </div>
 
                 <div class="reveal delay-6">
-                    <img src="assets/image/doodles/8.svg" class="w-40 h-38" alt="doodle8">
-                    <h3 class="text-xl font-semibold mb-2">Dan masih banyak lagi!</h3>
-                    <p class="mulish-p text-gray-500 text-sm leading-relaxed">
+                    <img src="./assets/image/doodles/8.svg" class="w-40 h-38" alt="doodle8">
+                    <h3 class="mulish text-xl font-bold mb-2">Dan masih banyak lagi!</h3>
+                    <p class="mulish text-gray-500 text-sm leading-relaxed">
                         Penanganan penyakit mulut serta teledentistry untuk konsultasi yang lebih praktis dan mudah.
                     </p>
                 </div>

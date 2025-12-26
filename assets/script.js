@@ -28,7 +28,23 @@ document.addEventListener("scroll", () => {
   });
 });
 
+// Galeri Header 
+const images = document.querySelectorAll('.slide-img');
+let currentIndex = 0;
 
+function showNextImage() {
+    // Remove opacity from current image
+    images[currentIndex].classList.replace('opacity-100', 'opacity-0');
+
+    // Increment index (loop back to 0 at the end)
+    currentIndex = (currentIndex + 1) % images.length;
+
+    // Add opacity to next image
+    images[currentIndex].classList.replace('opacity-0', 'opacity-100');
+}
+
+// Run every 5000ms (5 seconds)
+setInterval(showNextImage, 5000);
 
 // Scroll Reveal Observer
 const reveals = document.querySelectorAll(".reveal");
