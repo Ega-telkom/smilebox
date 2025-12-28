@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Selamat Datang! — Smilebox</title>
     <link rel="icon" type="image/x-icon" href="./assets/image/favicon.png">
-        
+
     <!-- Light mode favicon -->
     <link rel="icon" href="./assets/image/favicon-light.png" type="image/x-icon" media="(prefers-color-scheme: light)">
-    
+
     <!-- Dark mode favicon -->
     <link rel="icon" href="./assets/image/favicon-dark.png" type="image/x-icon" media="(prefers-color-scheme: dark)">
 
@@ -26,29 +26,31 @@
 
 <body>
     <!--Navbar-->
-        <nav class="navbar fixed top-0 left-0 right-0 z-50 flex justify-center p-0">
-            <div id="nav-container" class="navbar flex items-center justify-between w-full px-10 py-5 bg-transparent transition-all duration-300 flex-wrap">
-                
-                <div class="flex items-center">
-                    <img src="./assets/image/logo.png" alt="Smilebox Logo" class="w-6 h-6" />
-                </div>
+    <nav class="navbar fixed top-0 left-0 right-0 z-50 flex justify-center p-0">
+        <div id="nav-container"
+            class="navbar flex items-center justify-between w-full px-10 py-5 bg-transparent transition-all duration-300 flex-wrap">
 
-                <button id="hamburger" onclick="toggleMenu()" class="relative w-8 h-8 flex flex-col justify-between items-center md:hidden group">
-                    <span id="line-1" class="w-full h-1 bg-gray-600 rounded-lg transition-all duration-500"></span>
-                    <span id="line-2" class="w-full h-1 bg-gray-600 rounded-lg transition-all duration-500"></span>
-                    <span id="line-3" class="w-full h-1 bg-gray-600 rounded-lg transition-all duration-500"></span>
-                </button>
+            <div class="flex items-center">
+                <img src="./assets/image/logo.png" alt="Smilebox Logo" class="w-6 h-6" />
+            </div>
 
-                <div id="menu-items" class="hidden w-full md:flex md:w-auto md:items-center md:gap-10 mt-4 md:mt-0">
-                    <div class="flex flex-col md:flex-row md:items-center gap-6 text-sm font-medium text-gray-500">
-                        <a href="Tentang" class="hover:text-black transition">Tentang</a>
-                        <a href="Layanan" class="hover:text-black transition">Layanan</a>
-                        <a href="Kontak" class="hover:text-black transition">Kontak</a>
-                        <a href="Login" class="md:ml-4 font-semibold text-gray-800">Login</a>
-                    </div>
+            <button id="hamburger" onclick="toggleMenu()"
+                class="relative w-8 h-8 flex flex-col justify-between items-center md:hidden group">
+                <span id="line-1" class="w-full h-1 bg-gray-600 rounded-lg transition-all duration-500"></span>
+                <span id="line-2" class="w-full h-1 bg-gray-600 rounded-lg transition-all duration-500"></span>
+                <span id="line-3" class="w-full h-1 bg-gray-600 rounded-lg transition-all duration-500"></span>
+            </button>
+
+            <div id="menu-items" class="hidden w-full md:flex md:w-auto md:items-center md:gap-10 mt-4 md:mt-0">
+                <div class="flex flex-col md:flex-row md:items-center gap-6 text-sm font-medium text-gray-500">
+                    <a href="Tentang" class="hover:text-black transition">Tentang</a>
+                    <a href="Layanan" class="hover:text-black transition">Layanan</a>
+                    <a href="Kontak" class="hover:text-black transition">Kontak</a>
+                    <a href="Login" class="md:ml-4 font-semibold text-gray-800">Login</a>
                 </div>
             </div>
-        </nav>
+        </div>
+    </nav>
 
     <!--Konten-->
     <main class="relative w-full pt-40">
@@ -66,24 +68,27 @@
                 </div>
             </div>
 
-            <div class="absolute bottom-[5%] xl:bottom-[24%] left-1/2 -translate-x-1/2 w-[55%] xl:w-[45%] h-full z-20 pointer-events-none">
-                
+            <div
+                class="absolute bottom-[5%] xl:bottom-[24%] left-1/2 -translate-x-1/2 w-[55%] xl:w-[45%] h-full z-20 pointer-events-none">
+
                 <img src="./assets/image/header/header-1.png" alt="Portrait 1"
                     class="slide-img absolute bottom-0 left-0 w-full h-[130%] object-contain object-bottom transition-opacity duration-500 opacity-100" />
-                    
+
                 <img src="./assets/image/header/header-2.png" alt="Portrait 2"
                     class="slide-img absolute bottom-0 left-0 w-full h-[130%] object-contain object-bottom transition-opacity duration-500 opacity-0" />
-                
+
                 <img src="./assets/image/header/header-3.png" alt="Portrait 2"
                     class="slide-img absolute bottom-0 left-0 w-full h-[130%] object-contain object-bottom transition-opacity duration-500 opacity-0" />
-                
-                <div class="absolute bottom-0 left-0 w-full h-[20%] bg-gradient-to-t from-sky-400 to-transparent z-30"></div>
+
+                <div class="absolute bottom-0 left-0 w-full h-[20%] bg-gradient-to-t from-sky-400 to-transparent z-30">
+                </div>
             </div>
 
             <div class="absolute inset-0 flex flex-col items-center pointer-events-none z-30">
                 <h1
                     class="fraunces hidden xl:block text-5xl md:text-6xl lg:text-7xl font-bold text-transparent text-center px-10 pt-[2%] lg:pt-[5%]">
-                    Terda<span class="text-white [text-shadow:4px_4px_0px_rgba(0,0,0,1)]">pat Berlian di Senyu</span>manmu
+                    Terda<span class="text-white [text-shadow:4px_4px_0px_rgba(0,0,0,1)]">pat Berlian di
+                        Senyu</span>manmu
                 </h1>
             </div>
 
@@ -92,25 +97,22 @@
                 Terdapat Berlian di Senyumanmu
             </h1>
         </section>
-        
+
         <section class="w-full bg-sky-400 pb-10 xl:pb-0">
             <h1
                 class="fraunces block xl:hidden text-5xl md:text-6xl lg:text-7xl font-bold text-white text-center px-10 pt-[2%] lg:pt-[5%] z-0">
-                Terdapat Berlian di 
+                Terdapat Berlian di
                 <span class="inline-block whitespace-nowrap">
-                    Senyumanmu<img 
-                      src="./assets/image/doodles/diamond-white.svg" 
-                      class="inline-block w-8 h-8 mb-[0.5em] ml-0.5" 
-                      alt="icon"
-                    />
-                  </span>
+                    Senyumanmu<img src="./assets/image/doodles/diamond-white.svg"
+                        class="inline-block w-8 h-8 mb-[0.5em] ml-0.5" alt="icon" />
+                </span>
             </h1>
         </section>
-        
+
         <section class="hidden xl:flex w-full bg-sky-400 justify-center items-center py-4">
             <img src="./assets/image/doodles/diamond-white.svg" alt="diamond">
         </section>
-        
+
         <section class="w-full bg-sky-400 flex justify-center">
             <img src="./assets/image/doodles/line.svg" alt="">
         </section>
@@ -128,17 +130,14 @@
 
             <!-- Heading -->
             <div class="text-left md:text-center mb-20 reveal">
-                <img src="./assets/image/doodles/1.svg" 
-                     class="block md:mx-auto w-24 h-24 xl:w-32 xl:h-32 mb-6" 
-                     alt="doodle1">
-            
+                <img src="./assets/image/doodles/1.svg" class="block md:mx-auto w-24 h-24 xl:w-32 xl:h-32 mb-6"
+                    alt="doodle1">
+
                 <h2 class="fraunces text-3xl md:text-4xl font-semibold mb-4">
                     Kami bisa melakukan banyak hal!
                 </h2>
-            
-                <img src="./assets/image/doodles/2.svg" 
-                     class="block md:mx-auto w-24 h-2 mb-3" 
-                     alt="doodle2">
+
+                <img src="./assets/image/doodles/2.svg" class="block md:mx-auto w-24 h-2 mb-3" alt="doodle2">
             </div>
 
             <!-- Grid Layanan -->
@@ -149,7 +148,8 @@
                     <img src="./assets/image/doodles/3.svg" class="w-32 h-32 mb-6" alt="doodle3">
                     <h3 class="mulish text-xl font-bold mb-2">Umum</h3>
                     <p class="mulish text-gray-500 text-sm leading-relaxed">
-                        Konsultasi, scaling, rontgen gigi, hingga perawatan gigi anak kami lakukan dengan cara yang nyaman dan ramah untuk semua usia.
+                        Konsultasi, scaling, rontgen gigi, hingga perawatan gigi anak kami lakukan dengan cara yang
+                        nyaman dan ramah untuk semua usia.
                     </p>
                 </div>
 
@@ -157,7 +157,8 @@
                     <img src="./assets/image/doodles/4.svg" class="w-38 h-32 mb-6" alt="doodle4">
                     <h3 class="mulish text-xl font-bold mb-2">Perawatan Gigi</h3>
                     <p class="mulish text-gray-500 text-sm leading-relaxed">
-                        Tambal gigi, perawatan saluran akar, crown, dan veneer untuk menjaga fungsi gigi sekaligus membuat senyum tetap sehat.
+                        Tambal gigi, perawatan saluran akar, crown, dan veneer untuk menjaga fungsi gigi sekaligus
+                        membuat senyum tetap sehat.
                     </p>
                 </div>
 
@@ -165,7 +166,8 @@
                     <img src="./assets/image/doodles/5.svg" class="w-38 h-32 mb-6" alt="doodle5">
                     <h3 class="mulish text-xl font-bold mb-2">Ortodontik</h3>
                     <p class="mulish text-gray-500 text-sm leading-relaxed">
-                        Perawatan kawat gigi (behel) yang disesuaikan dengan kebutuhanmu untuk hasil yang rapi dan optimal.
+                        Perawatan kawat gigi (behel) yang disesuaikan dengan kebutuhanmu untuk hasil yang rapi dan
+                        optimal.
                     </p>
                 </div>
 
@@ -173,7 +175,8 @@
                     <img src="./assets/image/doodles/6.svg" class="h-32 mb-6" alt="doodle6">
                     <h3 class="mulish text-xl font-bold mb-2">Estetika & Kosmetik</h3>
                     <p class="mulish text-gray-500 text-sm leading-relaxed">
-                        Bleaching, gigi palsu, dan implan gigi untuk membantu senyummu terlihat lebih cerah, alami, dan percaya diri.
+                        Bleaching, gigi palsu, dan implan gigi untuk membantu senyummu terlihat lebih cerah, alami, dan
+                        percaya diri.
                     </p>
                 </div>
 
@@ -181,7 +184,8 @@
                     <img src="./assets/image/doodles/7.svg" class="h-32 mb-6" alt="doodle7">
                     <h3 class="mulish text-xl font-bold mb-2">Bedah Mulut</h3>
                     <p class="mulish text-gray-500 text-sm leading-relaxed">
-                        Pencabutan gigi dan bedah mulut minor dilakukan dengan prosedur aman dan tenaga medis berpengalaman.
+                        Pencabutan gigi dan bedah mulut minor dilakukan dengan prosedur aman dan tenaga medis
+                        berpengalaman.
                     </p>
                 </div>
 
@@ -203,6 +207,93 @@
         Footer!
     </div>
 
+
+    <!-- CHATBOT WIDGET -->
+    <div id="chatWidget" class="fixed bottom-6 right-6 z-[100] flex flex-col items-end pointer-events-none">
+
+        <!-- CHAT WINDOW (Hidden by default) -->
+        <div id="chatWindow"
+            class="mb-4 w-[350px] md:w-[400px] h-[500px] bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl shadow-2xl flex flex-col overflow-hidden opacity-0 translate-y-10 pointer-events-auto transition-all duration-300 origin-bottom-right scale-95"
+            style="display: none;">
+
+            <!-- Header -->
+            <div class="p-5 bg-sky-400 backdrop-blur-md flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center">
+                        <img src="./assets/image/logo.png" alt="Smilebox Logo AI" class="w-6 h-6" />
+                    </div>
+                    <div>
+                        <h4 class="text-white font-bold text-sm" data-lang="chat_title">Smilebox Chatbot AI</h4>
+                        <span class="text-white text-xs flex items-center gap-1">
+                            <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span> <span
+                                data-lang="chat_status">Online</span>
+                        </span>
+                    </div>
+                </div>
+                <button id="closeChat" class="text-white/80 hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Messages Area -->
+            <div id="chatMessages" class="flex-1 overflow-y-auto p-4 space-y-4 scroll-smooth">
+                <!-- Welcome Message -->
+                <div class="flex gap-3" id="chatWelcome">
+                    <div class="w-8 h-8 rounded-full bg-white flex items-center justify-center shrink-0">
+                        <img src="./assets/image/logo.png" alt="Smilebox Logo AI" class="w-6 h-6" />
+                    </div>
+                    <div class="bg-white/10 border border-white/10 p-3 rounded-2xl rounded-tl-none text-sm text-gray-800 backdrop-blur-sm self-start max-w-[85%]"
+                        data-lang="chat_welcome">
+                        Halo! Saya asisten pintar Smilebox. siap bantu kamu seputar perawatan gigi dan senyumanmu. 😁
+                    </div>
+                </div>
+                <!-- Suggested Chips -->
+                <div class="flex flex-wrap gap-2 pl-11" id="chatChips">
+                    <button
+                        class="chat-chip text-xs bg-white/20 hover:bg-sky-400 hover:text-white text-gray-700 border border-white/30 px-3 py-1.5 rounded-full transition-all"
+                        data-lang="chat_chip_1">Behel Gigi</button>
+                    <button
+                        class="chat-chip text-xs bg-white/20 hover:bg-sky-400 hover:text-white text-gray-700 border border-white/30 px-3 py-1.5 rounded-full transition-all"
+                        data-lang="chat_chip_2">Tips Menjaga gigi</button>
+                    <button
+                        class="chat-chip text-xs bg-white/20 hover:bg-sky-400 hover:text-white text-gray-700 border border-white/30 px-3 py-1.5 rounded-full transition-all"
+                        data-lang="chat_chip_3">Jadwal Klinik</button>
+                    <button
+                        class="chat-chip text-xs bg-white/20 hover:bg-sky-400 hover:text-white text-gray-700 border border-white/30 px-3 py-1.5 rounded-full transition-all"
+                        data-lang="chat_chip_3">layanan Smilebox</button>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="p-4 bg-white/5 border-t border-white/10 backdrop-blur-md">
+                <form id="chatForm" class="flex gap-2">
+                    <input type="text" id="chatInput" data-lang-placeholder="chat_placeholder"
+                        class="flex-1 bg-white/20 border border-white/20 rounded-full px-4 py-2 text-sm focus:outline-none focus:border-sky-400 focus:bg-white/40 transition-all placeholder:text-gray-500 text-gray-800">
+                    <button type="submit"
+                        class="w-10 h-10 rounded-full bg-sky-400 flex items-center justify-center text-white hover:bg-sky-400 transition-all shadow-lg hover:scale-105 active:scale-95 disabled:opacity-50 disabled:scale-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-5 h-5 ml-0.5">
+                            <path
+                                d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- TOGGLE BUTTON -->
+        <button id="toggleChat"
+            class="w-16 h-16 rounded-full bg-sky-400 shadow-[0_0_30px_rgba(56,189,248,0.4)] flex items-center justify-center text-white hover:scale-110 transition-transform duration-300 pointer-events-auto border-4 border-white">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" class="w-8 h-8">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
+            </svg>
+        </button>
+    </div>
 </body>
 
 </html>
