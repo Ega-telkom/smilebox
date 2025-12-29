@@ -246,3 +246,25 @@ chips.forEach(chip => {
     handleSend({ preventDefault: () => { } });
   });
 });
+
+const openModalBtn = document.getElementById("openCertificateModal");
+const closeModalBtn = document.getElementById("closeCertificateModal");
+const modal = document.getElementById("certificateModal");
+
+openModalBtn.addEventListener("click", () => {
+  modal.classList.remove("hidden");
+  modal.classList.add("flex");
+});
+
+closeModalBtn.addEventListener("click", () => {
+  modal.classList.add("hidden");
+  modal.classList.remove("flex");
+});
+
+// Klik area gelap untuk menutup modal
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+  }
+});

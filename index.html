@@ -289,8 +289,11 @@
                     <img src="./assets/image/doodles/10.svg" class="w-24 h-24 mb-6" alt="doodle10">
                     <h3 class="mulish text-xl font-bold mb-2">Tersertifikat</h3>
                     <p class="mulish text-gray-500 text-sm leading-relaxed">
-                        Ditangani Dokter Gigi Bersertifikat Resmi. Keahlian Terpercaya, Hasil Maksimal. <a
-                            class="text-sky-400 hover:text-cyan-600" href="#">Lihat Sertifikat Kami</a>
+                        Ditangani Dokter Gigi Bersertifikat Resmi. Keahlian Terpercaya, Hasil Maksimal.
+                        <button id="openCertificateModal"
+                            class="text-sky-400 hover:text-cyan-600 underline underline-offset-2 cursor-pointer">
+                            Lihat Sertifikat Kami
+                        </button>
                     </p>
                 </div>
 
@@ -579,6 +582,30 @@
             </svg>
         </button>
     </div>
+
+    <!-- Modal Sertifikat -->
+    <div id="certificateModal"
+        class="fixed inset-0 z-[999] hidden items-center justify-center bg-black/50 backdrop-blur-sm">
+        <div
+            class="relative bg-white rounded-xl shadow-xl w-full max-w-md md:max-w-2xl xl:max-w-4xl max-h-[90vh] mx-4 p-6 animate-fadeIn overflow-auto">
+
+            <!-- Close Button -->
+            <button id="closeCertificateModal" class="absolute top-3 right-3 text-gray-400 hover:text-gray-700 text-xl"
+                aria-label="Tutup">
+                &times;
+            </button>
+
+            <!-- Title -->
+            <h3 class="mulish text-lg font-bold mb-4">
+                Sertifikat Dokter Gigi Smilebox
+            </h3>
+
+            <!-- Image -->
+            <img src="./assets/image/sertifikat/sertifikat klinik.png" alt="Sertifikat Smilebox"
+                class="w-full max-h-[70vh] object-contain rounded-lg">
+        </div>
+    </div>
+
 </body>
 
 </html>
