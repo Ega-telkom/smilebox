@@ -268,3 +268,29 @@ modal.addEventListener("click", (e) => {
     modal.classList.remove("flex");
   }
 });
+
+const swiper = new Swiper(".mySwiper", {
+        grabCursor: true,
+        
+        // Konfigurasi Navigasi
+        navigation: {
+            nextEl: ".swiper-button-next-custom",
+            prevEl: ".swiper-button-prev-custom",
+        },
+
+        // Konfigurasi Grid & Gap
+        breakpoints: {
+            320: {
+                slidesPerView: 1.2,
+                spaceBetween: 15
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            }
+        }
+    });
