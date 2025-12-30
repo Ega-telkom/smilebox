@@ -400,7 +400,7 @@
 <div class="bg-white rounded-l-[40px] py-16 pl-8 md:pl-24 w-full ml-auto overflow-hidden">
         
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 pr-8 md:pr-24">
-            <h2 class="fraunces text-5xl font-bold text-black">Testimoni</h2>
+            <h2 class="fraunces text-4xl font-bold text-black">Testimoni</h2>
             <div class="flex gap-6 mt-4 md:mt-0">
                 <button class="swiper-button-prev-custom text-sky-500 font-bold hover:text-sky-700 transition-colors cursor-pointer select-none"> PREV </button>
                 <button class="swiper-button-next-custom text-sky-500 font-bold hover:text-sky-700 transition-colors cursor-pointer select-none"> NEXT </button>
@@ -461,66 +461,70 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     </section>
 
-    <section class="py-16 px-3 flex justify-center">
+   <section class="pt-0 pb-32 pl-8 md:pl-24 pr-8 flex justify-start bg-white overflow-hidden">
+    
+    <div class="relative -mt-10 md:-mt-16 max-w-7xl w-full bg-white flex flex-col md:flex-row p-4">
         
-        <div class="relative max-w-6xl w-full bg-white rounded-2xl overflow-hidden flex flex-col md:flex-row">
-            
-            <div class="flex-[1.2] p-12 md:p-16 flex flex-col justify-center">
-                <div class="mb-10">
-                    <h2 class="fraunces font-heading text-5xl text-black mb-10">Layanan umum</h2>
-                    
-                    <div class="space-y-6 text-lg text-slate-800">
-                        
-                        <div class="grid grid-cols-[120px_1fr] items-start">
-                            <span class="mulish font-bold">Dokter :</span>
-                            <div class="leading-relaxed">
-                                <p class="mulish flex items-center gap-2">
-                                    Dr. Faisal Ahmad 
-                                    <span class="text-sky-400 text-[12px] border border-sky-400 rounded-full w-5 h-5 flex items-center justify-center font-normal">i</span>
-                                </p>
-                                <p class="mulish">Dr. Sharmin Sultana</p>
-                            </div>
+        <div class="flex-1 py-12 md:py-16 pr-8 md:pr-12 flex flex-col justify-between reveal delay-3">
+            <div class="mb-10">
+                <h2 class="fraunces font-bold text-4xl text-black mb-10">Layanan umum</h2>
+                
+                <div class="space-y-6 text-lg text-slate-800">
+                    <div class="grid grid-cols-[140px_1fr] items-start">
+                        <span class="mulish font-bold">Dokter :</span>
+                        <div class="leading-relaxed">
+                            <p class="mulish flex items-center gap-2">
+                                Dr. Faisal Ahmad 
+                                <span class="text-sky-400 text-[12px] border border-sky-400 rounded-full w-5 h-5 flex items-center justify-center font-normal">i</span>
+                            </p>
+                            <p class="mulish">Dr. Sharmin Sultana</p>
                         </div>
+                    </div>
 
-                        <div class="grid grid-cols-[120px_1fr] items-start">
-                            <span class="mulish font-bold">Jadwal :</span>
-                            <div class="leading-relaxed">
-                                <p class="mulish flex items-center gap-2">
-                                    Senin - Jum'at 
-                                    <span class="text-sky-400 text-[12px] border border-sky-400 rounded-full w-5 h-5 flex items-center justify-center font-normal">i</span>
-                                </p>
-                                <p class="mulish">09:00 - 16:00 WIB</p>
-                            </div>
+                    <div class="grid grid-cols-[140px_1fr] items-start">
+                        <span class="mulish font-bold">Jadwal :</span>
+                        <div class="leading-relaxed">
+                            <p class="mulish flex items-center gap-2">
+                                Senin - Jum'at 
+                                <span class="text-sky-400 text-[12px] border border-sky-400 rounded-full w-5 h-5 flex items-center justify-center font-normal">i</span>
+                            </p>
+                            <p class="mulish">09:00 - 16:00 WIB</p>
                         </div>
+                    </div>
 
-                        <div class="grid grid-cols-[120px_1fr] items-start">
-                            <span class="mulish font-bold">Biaya :</span>
-                            <p class="mulish">Gratis - Rp 150.000</p>
-                        </div>
+                    <div class="grid grid-cols-[140px_1fr] items-start">
+                        <span class="mulish font-bold">Biaya :</span>
+                        <p class="mulish">Gratis - Rp 150.000</p>
                     </div>
                 </div>
             </div>
 
-            <div class="flex-1 p-6 md:p-8 bg-white flex items-center justify-center">
-                <div class="relative w-full aspect-[4/3] md:aspect-square lg:aspect-[4/3]">
-                    
-                    <div class="absolute -bottom-3 -right-3 w-full h-full border-2 border-sky-400 rounded-[2.5rem] z-0"></div>
-                    
-                    <div class="relative z-10 w-full h-full overflow-hidden rounded-[2rem] shadow-lg">
-                        <img 
-                            src="./assets/image/layanan-umum/image-29.png" 
-                            alt="Visual Layanan Umum" 
-                            class="w-full h-full object-cover object-center"
-                        >
-                    </div>
-
-                </div>
+            <div class="mt-4">
+                <a href="layanan_umum" class="inline-block no-underline">
+                    <button type="button" class="bg-[#00c2ff] hover:bg-[#00ace6] text-white px-10 py-2.5 rounded-full text-sm font-bold transition-all shadow-sm italic cursor-pointer">
+                        Selengkapnya
+                    </button>
+                </a>
             </div>
-
         </div>
 
-    </section>
+        <div class="flex-[1.4] p-6 md:p-10 flex items-center justify-center reveal delay-1">
+            <div class="relative w-full aspect-[16/10] max-w-2xl p-2">
+                
+                <div class="absolute -bottom-4 -right-3 w-full h-full border-2 border-sky-400 rounded-[3rem] z-0"></div>
+                
+                <div class="relative z-10 w-full h-full overflow-hidden rounded-[2.5rem] shadow-xl bg-slate-100">
+                    <img 
+                        src="./assets/image/layanan-umum/image-29.png" 
+                        alt="foto Layanan Umum" 
+                        class="w-full h-full object-cover object-center"
+                    >
+                </div>
+            </div>
+        </div>
 
+    </div>
+</section>
     <!--Footer-->
     <footer class="mulish w-full bg-white border-t border-gray-200">
         <!-- Menu Groups -->
