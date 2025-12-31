@@ -114,6 +114,34 @@ const chatForm = document.getElementById("chatForm");
 const chatInput = document.getElementById("chatInput");
 const chatMessages = document.getElementById("chatMessages");
 const chips = document.querySelectorAll(".chat-chip");
+// AUTO HIDE CHATBOT SAAT FOOTER TERLIHAT
+const chatWidget = document.getElementById("toggleChat");
+const footer = document.getElementById("footer");
+
+if (chatWidget && footer) {
+  const footerObserver = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        // Footer muncul → sembunyikan chatbot
+        chatWidget.classList.add("chat-hidden");
+
+        // Optional: tutup chat window kalau lagi terbuka
+        if (isChatOpen) {
+          toggleChatWidget();
+        }
+      } else {
+        // Footer hilang → tampilkan chatbot lagi
+        chatWidget.classList.remove("chat-hidden");
+      }
+    },
+    {
+      threshold: 0.15, // 15% footer terlihat
+    }
+  );
+
+  footerObserver.observe(footer);
+}
+
 
 let isChatOpen = false;
 
@@ -270,27 +298,28 @@ modal.addEventListener("click", (e) => {
 });
 
 const swiper = new Swiper(".mySwiper", {
-        grabCursor: true,
-        
-        // Konfigurasi Navigasi
-        navigation: {
-            nextEl: ".swiper-button-next-custom",
-            prevEl: ".swiper-button-prev-custom",
-        },
+  grabCursor: true,
 
-        // Konfigurasi Grid & Gap
-        breakpoints: {
-            320: {
-                slidesPerView: 1.2,
-                spaceBetween: 15
-            },
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 20
-            },
-            1024: {
-                slidesPerView: 3,
-                spaceBetween: 30
-            }
-        }
-    });
+  // Konfigurasi Navigasi
+  navigation: {
+    nextEl: ".swiper-button-next-custom",
+    prevEl: ".swiper-button-prev-custom",
+  },
+
+  // Konfigurasi Grid & Gap
+  breakpoints: {
+    320: {
+      slidesPerView: 1.2,
+      spaceBetween: 15
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    }
+  }
+});
+
