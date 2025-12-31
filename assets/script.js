@@ -323,3 +323,11 @@ const swiper = new Swiper(".mySwiper", {
   }
 });
 
+// animasi carousel layanan umum & lainnya
+let currentSlide = 0;
+    function moveSlide(direction) {
+        const track = document.getElementById('service-track');
+        const slides = track.children.length;
+        currentSlide = (currentSlide + direction + slides) % slides;
+        track.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }

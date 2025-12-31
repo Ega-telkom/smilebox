@@ -499,74 +499,199 @@
         </section>
 
         <!-- Detail Layanan -->
-        <section id="detail-layanan" class="pt-0 pb-32 pl-8 md:pl-24 pr-8 flex justify-start bg-white overflow-hidden">
+       <section id="layanan-carousel" class="carousel-container relative w-full overflow-hidden bg-white">
+    
+    <div id="service-track" class="flex transition-transform duration-700 ease-in-out">
 
+        <div class="min-w-full pt-0 pb-32 pl-8 md:pl-24 pr-8 flex justify-start bg-white">
             <div class="relative -mt-10 md:-mt-16 max-w-7xl w-full bg-white flex flex-col md:flex-row p-4">
-
-                <div class="flex-1 py-12 md:py-16 pr-8 md:pr-12 flex flex-col justify-between reveal delay-3">
+                <div class="flex-1 py-12 md:py-16 pr-0 md:pr-12 flex flex-col reveal delay-1">
                     <div class="mb-10">
                         <h2 class="fraunces font-bold text-4xl text-black mb-10">Layanan umum</h2>
+                        
+                        <div class="block md:hidden mb-12">
+                            <div class="relative w-full aspect-[16/10] p-2">
+                                <div class="absolute -bottom-4 -right-3 w-full h-full border-2 border-sky-400 rounded-[3rem] z-0"></div>
+                                <div class="relative z-10 w-full h-full overflow-hidden rounded-[2.5rem] shadow-xl bg-slate-100">
+                                    <img src="./assets/image/layanan-umum/image-29.png" alt="foto Layanan Umum" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="space-y-6 text-lg text-slate-800">
                             <div class="grid grid-cols-[140px_1fr] items-start">
                                 <span class="mulish font-bold">Dokter :</span>
                                 <div class="leading-relaxed">
-                                    <p class="mulish flex items-center gap-2">
-                                        Dr. Faisal Ahmad
-                                        <span
-                                            class="text-sky-400 text-[12px] border border-sky-400 rounded-full w-5 h-5 flex items-center justify-center font-normal">i</span>
-                                    </p>
+                                    <p class="mulish flex items-center gap-2">Dr. Faisal Ahmad <span class="text-sky-400 text-[12px] border border-sky-400 rounded-full w-5 h-5 flex items-center justify-center font-normal">i</span></p>
                                     <p class="mulish">Dr. Sharmin Sultana</p>
                                 </div>
                             </div>
-
                             <div class="grid grid-cols-[140px_1fr] items-start">
                                 <span class="mulish font-bold">Jadwal :</span>
                                 <div class="leading-relaxed">
-                                    <p class="mulish flex items-center gap-2">
-                                        Senin - Jum'at
-                                        <span
-                                            class="text-sky-400 text-[12px] border border-sky-400 rounded-full w-5 h-5 flex items-center justify-center font-normal">i</span>
-                                    </p>
+                                    <p class="mulish flex items-center gap-2">Senin - Jum'at <span class="text-sky-400 text-[12px] border border-sky-400 rounded-full w-5 h-5 flex items-center justify-center font-normal">i</span></p>
                                     <p class="mulish">09:00 - 16:00 WIB</p>
                                 </div>
                             </div>
-
                             <div class="grid grid-cols-[140px_1fr] items-start">
                                 <span class="mulish font-bold">Biaya :</span>
                                 <p class="mulish">Gratis - Rp 150.000</p>
                             </div>
                         </div>
                     </div>
-
                     <div class="mt-4">
                         <a href="layanan_umum" class="inline-block no-underline">
-                            <button type="button"
-                                class="bg-[#00c2ff] hover:bg-[#00ace6] text-white px-10 py-2.5 rounded-full text-sm font-bold transition-all shadow-sm italic cursor-pointer">
-                                Selengkapnya
-                            </button>
+                            <button type="button" class="bg-[#00c2ff] hover:bg-[#00ace6] text-white px-10 py-2.5 rounded-full text-sm font-bold transition-all shadow-sm italic cursor-pointer">Selengkapnya</button>
                         </a>
                     </div>
                 </div>
-
-                <div class="flex-[1.4] p-6 md:p-10 flex items-center justify-center reveal delay-1">
+                <div class="hidden md:flex flex-[1.4] p-6 md:p-10 items-center justify-center reveal delay-2">
                     <div class="relative w-full aspect-[16/10] max-w-2xl p-2">
-
-                        <div
-                            class="absolute -bottom-4 -right-3 w-full h-full border-2 border-sky-400 rounded-[3rem] z-0">
-                        </div>
-
-                        <div
-                            class="relative z-10 w-full h-full overflow-hidden rounded-[2.5rem] shadow-xl bg-slate-100">
-                            <img src="./assets/image/layanan-umum/image-29.png" alt="foto Layanan Umum"
-                                class="w-full h-full object-cover object-center">
+                        <div class="absolute -bottom-4 -right-3 w-full h-full border-2 border-sky-400 rounded-[3rem] z-0"></div>
+                        <div class="relative z-10 w-full h-full overflow-hidden rounded-[2.5rem] shadow-xl bg-slate-100">
+                            <img src="./assets/image/layanan-umum/image-29.png" class="w-full h-full object-cover">
                         </div>
                     </div>
                 </div>
-
             </div>
+        </div>
 
-        </section>
+        <div class="min-w-full pt-0 pb-32 pl-8 md:pl-24 pr-8 flex justify-start bg-white">
+            <div class="relative -mt-10 md:-mt-16 max-w-7xl w-full bg-white flex flex-col md:flex-row p-4">
+                <div class="flex-1 py-12 md:py-16 pr-0 md:pr-12 flex flex-col reveal delay-1">
+                    <div class="mb-10">
+                        <h2 class="fraunces font-bold text-4xl text-black mb-10">Perawatan Gigi</h2>
+                        <div class="block md:hidden mb-12">
+                            <div class="relative w-full aspect-[16/10] p-2">
+                                <div class="absolute -bottom-4 -right-3 w-full h-full border-2 border-sky-400 rounded-[3rem] z-0"></div>
+                                <div class="relative z-10 w-full h-full overflow-hidden rounded-[2.5rem] shadow-xl bg-slate-100">
+                                    <img src="./assets/image/layanan-umum/image 39.png" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-6 text-lg text-slate-800">
+                            <div class="grid grid-cols-[140px_1fr] items-start"><span class="mulish font-bold">Dokter :</span><p class="mulish">Dr. Anisa Bahar</p></div>
+                            <div class="grid grid-cols-[140px_1fr] items-start"><span class="mulish font-bold">Jadwal :</span><div class="leading-relaxed"><p class="mulish">Sabtu - Minggu</p><p class="mulish">10:00 - 18:00 WIB</p></div></div>
+                            <div class="grid grid-cols-[140px_1fr] items-start"><span class="mulish font-bold">Biaya :</span><p class="mulish">Rp 200.000 - Rp 500.000</p></div>
+                        </div>
+                    </div>
+                    <div class="mt-4"><button class="bg-[#00c2ff] text-white px-10 py-2.5 rounded-full text-sm font-bold italic">Selengkapnya</button></div>
+                </div>
+                <div class="hidden md:flex flex-[1.4] p-6 md:p-10 items-center justify-center reveal delay-2">
+                    <div class="relative w-full aspect-[16/10] max-w-2xl p-2">
+                        <div class="absolute -bottom-4 -right-3 w-full h-full border-2 border-sky-400 rounded-[3rem] z-0"></div>
+                        <div class="relative z-10 w-full h-full overflow-hidden rounded-[2.5rem] shadow-xl bg-slate-100">
+                            <img src="./assets/image/layanan-umum/image 39.png" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="min-w-full pt-0 pb-32 pl-8 md:pl-24 pr-8 flex justify-start bg-white">
+            <div class="relative -mt-10 md:-mt-16 max-w-7xl w-full bg-white flex flex-col md:flex-row p-4">
+                <div class="flex-1 py-12 md:py-16 pr-0 md:pr-12 flex flex-col reveal delay-1">
+                    <div class="mb-10">
+                        <h2 class="fraunces font-bold text-4xl text-black mb-10">Ortodontik</h2>
+                        <div class="block md:hidden mb-12">
+                            <div class="relative w-full aspect-[16/10] p-2">
+                                <div class="absolute -bottom-4 -right-3 w-full h-full border-2 border-sky-400 rounded-[3rem] z-0"></div>
+                                <div class="relative z-10 w-full h-full overflow-hidden rounded-[2.5rem] shadow-xl bg-slate-100">
+                                    <img src="./assets/image/layanan-umum/image 41.png" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-6 text-lg text-slate-800">
+                            <div class="grid grid-cols-[140px_1fr] items-start"><span class="mulish font-bold">Dokter :</span><p class="mulish">Dr. Budi Santoso, Sp.Ort</p></div>
+                            <div class="grid grid-cols-[140px_1fr] items-start"><span class="mulish font-bold">Jadwal :</span><div class="leading-relaxed"><p class="mulish">Senin & Rabu</p><p class="mulish">13:00 - 20:00 WIB</p></div></div>
+                            <div class="grid grid-cols-[140px_1fr] items-start"><span class="mulish font-bold">Biaya :</span><p class="mulish">Mulai dari Rp 5.000.000</p></div>
+                        </div>
+                    </div>
+                    <div class="mt-4"><button class="bg-[#00c2ff] text-white px-10 py-2.5 rounded-full text-sm font-bold italic">Selengkapnya</button></div>
+                </div>
+                <div class="hidden md:flex flex-[1.4] p-6 md:p-10 items-center justify-center reveal delay-2">
+                    <div class="relative w-full aspect-[16/10] max-w-2xl p-2">
+                        <div class="absolute -bottom-4 -right-3 w-full h-full border-2 border-sky-400 rounded-[3rem] z-0"></div>
+                        <div class="relative z-10 w-full h-full overflow-hidden rounded-[2.5rem] shadow-xl bg-slate-100">
+                            <img src="./assets/image/layanan-umum/image 41.png" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="min-w-full pt-0 pb-32 pl-8 md:pl-24 pr-8 flex justify-start bg-white">
+            <div class="relative -mt-10 md:-mt-16 max-w-7xl w-full bg-white flex flex-col md:flex-row p-4">
+                <div class="flex-1 py-12 md:py-16 pr-0 md:pr-12 flex flex-col reveal delay-1">
+                    <div class="mb-10">
+                        <h2 class="fraunces font-bold text-4xl text-black mb-10">Estetika & Kosmetik</h2>
+                        <div class="block md:hidden mb-12">
+                            <div class="relative w-full aspect-[16/10] p-2">
+                                <div class="absolute -bottom-4 -right-3 w-full h-full border-2 border-sky-400 rounded-[3rem] z-0"></div>
+                                <div class="relative z-10 w-full h-full overflow-hidden rounded-[2.5rem] shadow-xl bg-slate-100">
+                                    <img src="./assets/image/layanan-umum/image 42.png" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-6 text-lg text-slate-800">
+                            <div class="grid grid-cols-[140px_1fr] items-start"><span class="mulish font-bold">Dokter :</span><p class="mulish">Dr. Citra Lestari</p></div>
+                            <div class="grid grid-cols-[140px_1fr] items-start"><span class="mulish font-bold">Jadwal :</span><div class="leading-relaxed"><p class="mulish">Jum'at</p><p class="mulish">09:00 - 15:00 WIB</p></div></div>
+                            <div class="grid grid-cols-[140px_1fr] items-start"><span class="mulish font-bold">Biaya :</span><p class="mulish">Rp 500.000 - Rp 2.500.000</p></div>
+                        </div>
+                    </div>
+                    <div class="mt-4"><button class="bg-[#00c2ff] text-white px-10 py-2.5 rounded-full text-sm font-bold italic">Selengkapnya</button></div>
+                </div>
+                <div class="hidden md:flex flex-[1.4] p-6 md:p-10 items-center justify-center reveal delay-2">
+                    <div class="relative w-full aspect-[16/10] max-w-2xl p-2">
+                        <div class="absolute -bottom-4 -right-3 w-full h-full border-2 border-sky-400 rounded-[3rem] z-0"></div>
+                        <div class="relative z-10 w-full h-full overflow-hidden rounded-[2.5rem] shadow-xl bg-slate-100">
+                            <img src="./assets/image/layanan-umum/image 42.png" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="min-w-full pt-0 pb-32 pl-8 md:pl-24 pr-8 flex justify-start bg-white">
+            <div class="relative -mt-10 md:-mt-16 max-w-7xl w-full bg-white flex flex-col md:flex-row p-4">
+                <div class="flex-1 py-12 md:py-16 pr-0 md:pr-12 flex flex-col reveal delay-1">
+                    <div class="mb-10">
+                        <h2 class="fraunces font-bold text-4xl text-black mb-10">Bedah Mulut</h2>
+                        <div class="block md:hidden mb-12">
+                            <div class="relative w-full aspect-[16/10] p-2">
+                                <div class="absolute -bottom-4 -right-3 w-full h-full border-2 border-sky-400 rounded-[3rem] z-0"></div>
+                                <div class="relative z-10 w-full h-full overflow-hidden rounded-[2.5rem] shadow-xl bg-slate-100">
+                                    <img src="./assets/image/layanan-umum/image 43.png" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-6 text-lg text-slate-800">
+                            <div class="grid grid-cols-[140px_1fr] items-start"><span class="mulish font-bold">Dokter :</span><p class="mulish">Dr. Dermawan, Sp.BM</p></div>
+                            <div class="grid grid-cols-[140px_1fr] items-start"><span class="mulish font-bold">Jadwal :</span><div class="leading-relaxed"><p class="mulish">Kamis</p><p class="mulish">16:00 - 21:00 WIB</p></div></div>
+                            <div class="grid grid-cols-[140px_1fr] items-start"><span class="mulish font-bold">Biaya :</span><p class="mulish">Tergantung Tindakan</p></div>
+                        </div>
+                    </div>
+                    <div class="mt-4"><button class="bg-[#00c2ff] text-white px-10 py-2.5 rounded-full text-sm font-bold italic">Selengkapnya</button></div>
+                </div>
+                <div class="hidden md:flex flex-[1.4] p-6 md:p-10 items-center justify-center reveal delay-2">
+                    <div class="relative w-full aspect-[16/10] max-w-2xl p-2">
+                        <div class="absolute -bottom-4 -right-3 w-full h-full border-2 border-sky-400 rounded-[3rem] z-0"></div>
+                        <div class="relative z-10 w-full h-full overflow-hidden rounded-[2.5rem] shadow-xl bg-slate-100">
+                            <img src="./assets/image/layanan-umum/image 43.png" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="carousel-nav-container">
+        <button onclick="moveSlide(-1)" class="btn-carousel-nav">❮</button>
+        <button onclick="moveSlide(1)" class="btn-carousel-nav">❯</button>
+    </div>
+</section>
+
 
         <!-- Kontak -->
         <section id="kontak" class="bg-white py-20 md:py-28">
