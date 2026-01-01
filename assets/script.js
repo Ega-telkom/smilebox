@@ -230,6 +230,16 @@ const KNOWLEDGE_BASE = {
   "bedah mulut": "Untuk tindakan lanjutan, Smilebox juga melayani pencabutan gigi dan bedah mulut minor. Prosedur dilakukan secara aman, minim rasa tidak nyaman, dan ditangani oleh tenaga medis berpengalaman.",
   "layanan lainnya": "Selain layanan di klinik, kami juga menangani berbagai masalah penyakit mulut dan menyediakan layanan teledentistry. Kamu bisa berkonsultasi dengan lebih praktis tanpa harus datang langsung ke klinik.",
   "terima kasih": "Sama-sama! Semoga harimu menyenangkan. Jangan ragu bertanya lagi ya! 😊",
+  "karang gigi": "Karang gigi adalah plak yang mengeras akibat sisa makanan dan bakteri. Untuk membersihkannya diperlukan tindakan scaling oleh dokter gigi. Di Smilebox, scaling dilakukan dengan aman dan nyaman agar gusi tetap sehat.",
+  "scaling": "Scaling adalah prosedur pembersihan karang gigi menggunakan alat khusus. Perawatan ini membantu mencegah bau mulut, radang gusi, dan gigi goyang. Scaling di Smilebox dilakukan secara profesional dan minim rasa tidak nyaman.",
+  "pembersihan gigi": "Pembersihan gigi secara rutin penting untuk menjaga kesehatan gusi dan gigi. Smilebox menyediakan layanan pembersihan gigi (scaling) dengan pendekatan yang nyaman dan aman.",
+  "bau mulut": "Bau mulut bisa disebabkan oleh karang gigi, sisa makanan, atau masalah gusi. Dengan pembersihan gigi dan perawatan yang tepat di Smilebox, masalah bau mulut bisa ditangani dengan baik.",
+  "sakit gigi": "Sakit gigi bisa disebabkan oleh gigi berlubang, infeksi, atau masalah gusi. Di Smilebox, dokter akan melakukan pemeriksaan terlebih dahulu untuk menentukan perawatan yang paling tepat dan nyaman.",
+  "gigi berlubang": "Gigi berlubang terjadi akibat bakteri yang merusak lapisan gigi. Smilebox menyediakan perawatan tambal gigi yang rapi, kuat, dan disesuaikan dengan kondisi gigimu.",
+  "tambal gigi": "Tambal gigi berfungsi untuk menutup gigi berlubang dan mencegah kerusakan lebih lanjut. Di Smilebox, tambal gigi dilakukan dengan bahan berkualitas agar nyaman dan tahan lama.",
+  "rontgen gigi": "Rontgen gigi membantu dokter melihat kondisi gigi dan akar yang tidak terlihat secara langsung. Layanan rontgen di Smilebox digunakan untuk diagnosis yang lebih akurat.",
+  "gusi berdarah": "Gusi berdarah bisa menjadi tanda adanya peradangan atau penumpukan karang gigi. Dengan perawatan yang tepat di Smilebox, kesehatan gusi dapat kembali terjaga.",
+  "kontrol gigi": "Kontrol gigi secara rutin setiap 6 bulan penting untuk mencegah masalah gigi dan mulut. Smilebox siap membantu menjaga senyummu tetap sehat."
 };
 
 async function generateResponse(prompt) {
@@ -325,9 +335,9 @@ const swiper = new Swiper(".mySwiper", {
 
 // animasi carousel layanan umum & lainnya
 let currentSlide = 0;
-    function moveSlide(direction) {
-        const track = document.getElementById('service-track');
-        const slides = track.children.length;
-        currentSlide = (currentSlide + direction + slides) % slides;
-        track.style.transform = `translateX(-${currentSlide * 100}%)`;
-    }
+function moveSlide(direction) {
+  const track = document.getElementById('service-track');
+  const slides = track.children.length;
+  currentSlide = (currentSlide + direction + slides) % slides;
+  track.style.transform = `translateX(-${currentSlide * 100}%)`;
+}
