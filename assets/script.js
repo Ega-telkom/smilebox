@@ -1,9 +1,20 @@
+let lastScrollY = window.scrollY;
+
 document.addEventListener("scroll", () => {
+  const currentScrollY = window.scrollY;
+  
   document.querySelectorAll(".navbar").forEach(navbar => {
-    if (window.scrollY > 50) {
+    // Hide saat scroll down, show saat scroll up
+    if (currentScrollY > lastScrollY && currentScrollY > 50) {
+      navbar.style.transform = "translateY(-100%)";
+    } else {
+      navbar.style.transform = "translateY(0)";
+    }
+    
+    // Glass effect tetap jalan
+    if (currentScrollY > 50) {
       navbar.classList.add(
-        "bg-white/30",
-        "backdrop-blur-sm",
+        "bg-white",
         "border-white/20",
         "shadow-md"
       );
@@ -14,8 +25,7 @@ document.addEventListener("scroll", () => {
       );
     } else {
       navbar.classList.remove(
-        "bg-white/30",
-        "backdrop-blur-sm",
+        "bg-white",
         "border-white/20",
         "shadow-md"
       );
@@ -26,37 +36,32 @@ document.addEventListener("scroll", () => {
       );
     }
   });
+  
+  lastScrollY = currentScrollY;
 });
 
-
 function toggleMenu() {
-  // Elemen garis nya
   const menu = document.getElementById('menu-items');
   const navContainer = document.getElementById('nav-container');
-  const l1 = document.getElementById('line-1');
-  const l2 = document.getElementById('line-2');
-  const l3 = document.getElementById('line-3');
-
-  // Jalanin toggle button nya
+  const menuBtn = document.getElementById('hamburger');
+  
+  const menuIcon = `<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>`;
+  const closeIcon = `<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>`;
+  
+  const isOpen = !menu.classList.contains('hidden');
+  
   menu.classList.toggle('hidden');
-
-  // Jika navContainer transparan,beri warna saat menu buka
   navContainer.classList.toggle('bg-white');
-  navContainer.classList.toggle('shadow-lg');
-
-  // Animasi Transformasi Burger ke X
-  l1.classList.toggle('rotate-90');
-  l1.classList.toggle('translate-x-[-8px]'); // Geser sedikit ke kiri
-  l1.classList.toggle('translate-y-[10px]'); // Sesuaikan posisi tinggi
-
-  l2.classList.toggle('rotate-90');
-  l2.classList.toggle('translate-y-[-3px]');
-  // Garis tengah tetap di porosnya, hanya berputar
-
-  l3.classList.toggle('rotate-90');
-  l3.classList.toggle('translate-x-[8px]');  // Geser sedikit ke kanan
-  l3.classList.toggle('translate-y-[-17px]'); // Sesuaikan posisi tinggi
+  
+  // Rotate animation
+  menuBtn.classList.toggle('rotate-180');
+  menuBtn.classList.toggle('-rotate-180');
+  
+  setTimeout(() => {
+    menuBtn.innerHTML = isOpen ? menuIcon : closeIcon;
+  }, 150);
 }
+
 
 // Tambahan: Menutup menu otomatis saat link diklik (untuk Single Page Application)
 document.querySelectorAll('#menu-items a').forEach(link => {
