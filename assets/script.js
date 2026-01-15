@@ -346,3 +346,31 @@ function moveSlide(direction) {
   currentSlide = (currentSlide + direction + slides) % slides;
   track.style.transform = `translateX(-${currentSlide * 100}%)`;
 }
+
+let startX = 0;
+let endX = 0;
+const track = document.getElementById("service-track");
+
+track.addEventListener("touchstart", (e) => {
+  startX = e.touches[0].clientX;
+});
+
+track.addEventListener("touchend", (e) => {
+  endX = e.changedTouches[0].clientX;
+  handleSwipe();
+});
+
+function handleSwipe() {
+  const threshold = 50;
+
+  if (startX - endX > threshold) {
+    moveSlide(1); // swipe kiri
+  } else if (endX - startX > threshold) {
+    moveSlide(-1); // swipe kanan
+  }
+}
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "ArrowRight") moveSlide(1);
+  if (e.key === "ArrowLeft") moveSlide(-1);
+});
